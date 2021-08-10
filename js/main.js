@@ -1,16 +1,40 @@
-$(document).ready(function(){
-  $('.slider').slick({
-    nextArrow: '<button class="slick-arrow slick-next"><img src="images/next.svg" alt="next arrow"></button>',
-    prevArrow: '<button class="slick-arrow slick-prev"><img src="images/prev.svg" alt="prev arrow"></button>',
-    fade: true,
+$(function(){
+    $('.fairy-tail__slider').slick({
+        prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="images/arrow-prev.svg" alt=""></button>',
+        nextArrow: '<button type="button" class="slick-btn slick-next"><img src="images/arrow-next.svg" alt=""></button>',
+        autoplay: true,
+        autoplaySpeed: 2000,
+        fade: true,
+        responsive: [
+            {
+                breakpoint: 601,
+                settings: {
+                    arrows: false
+                }
 
-    responsive: [
-      {
-        breakpoint: 769,
-        settings: {
-          arrows: false
-        }
-      }
-    ]
-  });
+            },
+
+        ]
+    });
+
+    $('.our-trip__slider').slick({
+        prevArrow: '<button type="button" class="slick-btn slick-prev"><img src="images/arrow-prev.svg" alt=""></button>',
+        nextArrow: '<button type="button" class="slick-btn slick-next"><img src="images/arrow-next.svg" alt=""></button>',
+        autoplay: true,
+        autoplaySpeed: 2000,
+        fade: true,
+        responsive: [
+            {
+                breakpoint: 601,
+                settings: {
+                    arrows: false
+                }
+
+            },
+
+        ]
+    });
 });
+
+
+
